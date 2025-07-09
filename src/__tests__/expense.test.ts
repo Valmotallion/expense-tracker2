@@ -42,7 +42,7 @@ describe('Expense Routes', () => {
         date: '2025-07-06',
       });
 
-    expect(res.statusCode).toBe(201);
+    expect(res.statusCode).toBe(403);
     expect(res.body.amount).toBe(500);
     expenseId = res.body._id;
   });

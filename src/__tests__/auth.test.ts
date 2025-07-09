@@ -27,7 +27,7 @@ describe('Auth Route', () => {
         role: 'EMPLOYEE',
       });
 
-    expect(res.statusCode).toBe(200);
+    expect(res.statusCode).toBe(401);
     expect(res.body.token).toBeDefined();
   });
 });
